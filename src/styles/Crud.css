@@ -1,0 +1,104 @@
+.title {
+    text-align: center;
+    font-family: monospace;
+    font-size: 2.0em;
+}
+
+.fetch-data-button {
+    text-align: center;
+    border: 2px solid royalblue;
+    border-radius: 5px;
+    padding: 10px;
+    margin: auto;
+    display: block;
+    font-family: monospace;
+    font-size: 1.5em;
+    background-color: dodgerblue;
+    color: whitesmoke;
+    box-shadow: 2px 2px 1px darkslateblue;
+    margin-block: 10px;
+}
+
+.clean-data-button {
+    text-align: center;
+    border: 2px solid coral;
+    border-radius: 5px;
+    padding: 10px;
+    margin: auto;
+    display: block;
+    font-family: monospace;
+    font-size: 1.5em;
+    background-color: crimson;
+    color: whitesmoke;
+    box-shadow: 2px 2px 1px brown;
+}
+
+.response-container {
+    border: 2px solid slateblue;
+    border-radius: 10px;
+    box-shadow: 2px 2px 20px royalblue;
+    margin-block: 20px;
+    display: block;
+    text-align: center;
+    height: 300px;
+    overflow-y: scroll;
+    background-color: rgba(30, 20, 190, 0.6);
+    width: 90%;
+    justify-self: center;
+    padding-inline: 20px;
+}
+.response-container::-webkit-scrollbar {
+    width: 10px; 
+    height: 12px;
+}
+.response-container::-webkit-scrollbar-track{
+    background: transparent;
+    border-radius: 5px;
+}
+.response-container::-webkit-scrollbar-thumb{
+    cursor: pointer;
+    background: linear-gradient(90deg, rgba(30, 80, 190, 0.2), #3639f4); 
+    border-radius: 10px;
+}
+.response-container ul li{
+    list-style: none;
+    border: 1px solid rgba(30, 80, 190, 0.2);
+    border-radius: 5px;
+    margin-block: 5px;
+    color: whitesmoke;
+    font-family: monospace;
+    font-size: 1.4em;
+    padding-block: 5px;
+    background-color: rgba(90, 80, 190, 0.8);
+}
+.response-container ul li:hover{
+    animation: GlowingBackGround infinite 2s linear;
+}
+
+button{
+    cursor: pointer;
+}
+
+/*Animations*/
+@keyframes GlowingBackGround {
+    0% {
+        border-top: 1px solid whitesmoke;
+        border-left: 1px solid white;
+    }
+    25% {
+        border-bottom: 1px solid white;
+        border-right: 1px solid whitesmoke;
+    }
+    50% {
+        border-right: 1px solid whitesmoke;
+        border-top: 1px solid whitesmoke;
+    }
+    75% {
+        border-bottom: 1px solid white;
+        border-left: 1px solid whitesmoke;
+    }
+    100% {
+        border-right: 1px solid whitesmoke;
+        border-bottom: 1px solid whitesmoke;
+    }
+}
