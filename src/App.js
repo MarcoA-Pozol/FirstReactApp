@@ -4,6 +4,7 @@ import ImagesGallery from './components/ImagesGallery.js';
 import PesoDollarConversor from './components/PesoDollarConversor.js';
 import ImageAndText from './components/ImageAndText.js';
 import Crud from './components/Crud.js';
+import CSVDataObtainer from './components/CSVDataObtainer.js'
 // import TopCaption from "./components/TopCaption.js";
 import "./App.css"
 
@@ -22,9 +23,10 @@ function Main() {
 
   return (
     <div>
-      {page_title}
+	  <CSVDataObtainer/>
+      {/*page_title}
       <Crud/>
-      {/*<ImageAndText/>
+      {<ImageAndText/>
       <hr></hr>
       <PesoDollarConversor/>
       <hr></hr>
