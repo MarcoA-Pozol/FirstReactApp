@@ -4,8 +4,9 @@ import ImagesGallery from './components/ImagesGallery.js';
 import PesoDollarConversor from './components/PesoDollarConversor.js';
 import ImageAndText from './components/ImageAndText.js';
 import Crud from './components/Crud.js';
-import CSVDataObtainer from './components/CSVDataObtainer.js'
-// import TopCaption from "./components/TopCaption.js";
+import CSVDataObtainer from './components/CSVDataObtainer.js';
+import TopCaption from "./components/TopCaption.js";
+import SimpleUserFormulary from './components/SimpleUserFormulary.js';
 import "./App.css"
 
 function Main() {
@@ -22,20 +23,21 @@ function Main() {
   // };
 
   return (
-    <div>
-	  <CSVDataObtainer/>
-      {/*page_title}
-      <Crud/>
-      {<ImageAndText/>
-      <hr></hr>
-      <PesoDollarConversor/>
-      <hr></hr>
-      {sum_result_container}
-      {<TopCaption/>}
-      <button onClick={pressButton}>Sum Numbers</button>
-      <p className='sum-result-container'>{result != null && <div>The result is <h3>{result}</h3></div>}</p>
-      <ImagesGallery/>
-      <Carousel/> */}
+	<div>
+		<SimpleUserFormulary username="Joaquin" email="joaquin1029@gmail.com" password="securepassword123"/>
+		<CSVDataObtainer/>
+		{/*page_title}
+		<Crud/>
+		{<ImageAndText/>
+		<hr></hr>
+		<PesoDollarConversor/>
+		<hr></hr>
+		{sum_result_container}
+		{<TopCaption/>}
+		<button onClick={pressButton}>Sum Numbers</button>
+		<p className='sum-result-container'>{result != null && <div>The result is <h3>{result}</h3></div>}</p>
+		<ImagesGallery/>
+		<Carousel/> */}
     </div>
   );
 }
