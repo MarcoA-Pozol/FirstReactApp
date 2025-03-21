@@ -2,7 +2,7 @@ import React from "react";
 import ItemComponent from "./ItemComponent.js";
 import "../../styles/ItemsMenu.css";
 
-const ItemsMenu = ({items}) => {
+const ItemsMenu = ({items, remove_item, add_item}) => {
     const items_list = items;
 
     return (
