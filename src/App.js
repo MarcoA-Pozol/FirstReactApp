@@ -3,6 +3,7 @@ import React from 'react';
 // Components
 import PackageItem from './components/PackageItem.js';
 import ItemsMenu from './components/ShopingCartSystemComponents/ItemsMenu.js';
+import HotelBooking from './components/HotelBookingSystemComponents/HotelBooking.jsx';
 // Styles
 import "./App.css"
 // Media (Images)
@@ -33,6 +34,8 @@ function Main() {
   return (
     <div>
       {page_title}
+
+      <HotelBooking/>
 
       <ItemsMenu items={items_list}/>
 
